@@ -3,6 +3,7 @@ import './App.css'
 import { useEffect } from 'react'
 import {gql, useQuery} from '@apollo/client'
 import { Persons } from './Persons'
+import { PersonForm } from './PersonsForms'
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
         </a>
       </div>
       <Persons persons={data?.allPersons}/>
+      <PersonForm/>
     </div>
   )
 }
